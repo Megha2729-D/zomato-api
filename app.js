@@ -31,8 +31,8 @@ app.use('/', routes);
 // Connect to Database and starting server
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }).
     then(() => {
-        app.listen(process.env.PORT || 8900, host, () => {
-            console.log(`Server running at ${host}:${port}`);
+        app.listen(port, () => {
+            console.log(`Server running on port ${port}`);
         });
     }).
     catch((err) => {
