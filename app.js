@@ -6,7 +6,6 @@ require("dotenv").config();
 const routes = require('./Routers/index');
 
 
-const host = "localhost";
 const port = process.env.PORT || 8900;
 // MogngoDB connecting string
 
